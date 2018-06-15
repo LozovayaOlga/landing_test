@@ -1,0 +1,31 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset='utf-8')
+		meta(name="description" content="описание")
+		meta(name="author" content="Ольга Лозовая") 
+		//- бутрстрап нужно копировать новые файлы с npm модуля 
+		//-link(rel="stylesheet", href="bootstrap/css/bootstrap-reboot.min.css")
+		
+		link(rel="stylesheet", href="dist/css/normalize.css")
+		
+		//-link(rel="stylesheet", href="bootstrap/css/bootstrap-grid.min.css")
+		//-link(rel="stylesheet", href="bootstrap/css/bootstrap.min.css")
+		
+		link(rel="stylesheet" href='style.css?v=%28.05.2018%')
+		//-сброс кэша
+		link(rel="icon" type="image/png" href="favicon.png" sizes="128x128")
+		title название сайта
+	body
+		.footer__down
+			include blocks/header.pug
+			
+		include blocks/footer.pug
+
+	
+		//- джиквери нужно копировать новые файлы с npm модуля, там еще есть какие то библиотеки, я не разбиралась еще
+		//--script(type="text/javascript" src="jquery/jquery.min.js")
+		//-script(type="text/javascript" src="bootstrap/js/bootstrap.min.js")
+		//-script(type="text/javascript" src="js/script.js?v=%28.05.2018%")
+		//- сброс кэша
+		
