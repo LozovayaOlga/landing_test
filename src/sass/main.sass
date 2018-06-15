@@ -1,0 +1,28 @@
+@import "blocks/vars.scss";
+
+* {
+	@include null;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: $family;
+	background-color: $blue;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__down {
+	flex: 1 0 auto;
+
+}
+
+.footer {
+	flex-shrink: 0;
+}
+
+@import "blocks/global.scss";

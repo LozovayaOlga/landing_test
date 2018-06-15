@@ -19,7 +19,7 @@ gulp.task('serve', ['cssfile'], function() {
 		index: "index.html"
     });
     	gulp.watch('src/pug/**/**.pug', ['pug']);
-  gulp.watch('src/sass/**/**.scss', ['sass']);
+  gulp.watch('src/sass/**/**.sass', ['sass']);
     gulp.watch('dist/css/**.css', ['cssfile']);
     gulp.watch("dist/*.html").on('change', browserSync.reload);
 		gulp.watch("dist/style.css").on('change', browserSync.reload);
@@ -48,14 +48,14 @@ gulp.task('minhtml', function() {
     .pipe(sourcemaps.init())
     .pipe(htmlmin({collapseWhitespace: true}))
 	   .pipe(sourcemaps.write())
-    .pipe(gulp.dest('htmlmin'));
+    .pipe(gulp.dest('minhtml'));
     
 });
 
 
 
 gulp.task('sass', function(){
-        return gulp.src('src/sass/**/**.scss')
+        return gulp.src('src/sass/**/**.sass')
             .pipe(plumber())
              .pipe(sourcemaps.init())
             .pipe(sass())
@@ -93,7 +93,7 @@ gulp.task('mincss', function() {
 
 gulp.task('watch', function() {
 	gulp.watch('src/pug/**/**.pug', ['pug']);
-  gulp.watch('src/sass/**/**.scss', ['sass']);
+  gulp.watch('src/sass/**/**.sass', ['sass']);
     gulp.watch('dist/css/**.css', ['cssfile']);
 	gulp.watch("dist/style.css").on('change', browserSync.reload);
     gulp.watch("dist/**.html").on('change', browserSync.reload);

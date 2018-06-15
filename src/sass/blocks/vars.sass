@@ -1,0 +1,33 @@
+
+
+$family:'', sans-serif;
+
+
+
+
+@mixin font($size, $weight, $color) {
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+}
+
+@mixin flex($direction, $justify){
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	flex-wrap: wrap;
+	}
+
+@mixin null {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@mixin absolute ($top:0, $left:0 ){
+	position: absolute;
+	top: $top;
+	left: $left;
+	}
+
+
