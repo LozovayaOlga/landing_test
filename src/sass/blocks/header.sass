@@ -1,0 +1,39 @@
+@import vars.sass
+	
+.header
+	background: url(img/jumbotron_foto.jpg) center no-repeat
+	background-size: cover
+	height: 890px
+	padding-top: 40px
+
+
+.header__title
+	font-size: 70px
+	padding-left: 10px
+	padding-right: 10px
+
+.header__text
+	@include font(18px, "OpenSansRegular", $white) 
+	
+.button_2
+	@include font(15px,"OpenSansSemiBold", $white) 
+	width: 116px
+	height: 44px
+	border-radius: 45px
+	text-align: center
+	padding: 10px
+	background: $siren
+	position: relative
+	&:hover
+		box-shadow: 0 0 0 1px #fff inset, 0 0 0 3px $siren
+		color: $white
+		text-decoration: none
+	&:active
+		box-shadow: 0 0 0 0 lighten($siren,30%)
+		top: 5px
+		left: 5px
+
+
+
+
+

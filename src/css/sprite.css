@@ -1,0 +1,41 @@
+.icon {
+    background-image: url(img/sprite/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.icon-author- {
+    width: 59px;
+    height: 59px;
+    background-position: -4px -4px;
+}
+
+.icon-cloud {
+    width: 43px;
+    height: 31px;
+    background-position: -4px -71px;
+}
+
+.icon-loop {
+    width: 45px;
+    height: 45px;
+    background-position: -4px -110px;
+}
+
+.icon-pen {
+    width: 53px;
+    height: 44px;
+    background-position: -4px -163px;
+}
+
+.icon-pensl {
+    width: 46px;
+    height: 46px;
+    background-position: -4px -215px;
+}
+
+.icon-squer {
+    width: 44px;
+    height: 44px;
+    background-position: -4px -269px;
+}

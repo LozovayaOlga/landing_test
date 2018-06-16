@@ -1,32 +1,33 @@
-@import "blocks/vars.scss";
+@import "blocks/vars.sass";
 
-* {
-	@include null;
-}
+* 
+	@include null
 
-html {
-	height: 100%;
-}
 
-body {
-	font-family: $family;
-	background-color: $blue;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-}
+html 
+	height: 100%
 
-.footer__down {
-	flex: 1 0 auto;
 
-}
+body 
+	@include font(16px, "OpenSansLight", $white)
+	background-color: $black_bg
+	height: 100%
+	display: flex
+	flex-direction: column
 
-.footer {
-	flex-shrink: 0;
-}
 
-@import "blocks/global.scss";
+.footer__down 
+	flex: 1 0 auto
 
 
 
-@import "blocks/media";
+.footer 
+	flex-shrink: 0
+
+
+@import "blocks/global.sass"
+@import "blocks/header.sass"
+
+
+
+@import "blocks/media.sass"

@@ -1,33 +1,33 @@
-$color
-
-$family:'', sans-serif;
-
-
+$white: rgb(255, 255, 255)
+$black_bg: rgb(35, 40, 49)
+$siren: rgb(131, 95, 168)
 
 
-@mixin font($size, $weight, $color) {
-	font-size: $size;
-	font-weight: $weight;
-	color: $color;
-}
 
-@mixin flex($direction, $justify){
-	display: flex;
-	flex-direction: $direction;
-	justify-content: $justify;
-	flex-wrap: wrap;
-	}
 
-@mixin null {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+@mixin font($size, $family, $color) 
+	font-size: $size
+	font-family: $family, sans-serif
+	color: $color
 
-@mixin absolute ($top:0, $left:0 ){
-	position: absolute;
-	top: $top;
-	left: $left;
-	}
+
+@mixin flex($direction, $justify)
+	display: flex
+	flex-direction: $direction
+	justify-content: $justify
+	flex-wrap: wrap
+	
+
+@mixin null 
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+
+@mixin absolute ($top:0, $left:0 )
+	position: absolute
+	top: $top
+	left: $left
+	
 
 

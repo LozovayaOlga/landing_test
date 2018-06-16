@@ -2,20 +2,21 @@ doctype html
 html(lang="ru")
 	head
 		meta(charset='utf-8')
-		meta(name="description" content="описание")
+		meta(name="description" content="учебный адаптивный лендинг")
 		meta(name="author" content="Ольга Лозовая") 
-		//- бутрстрап нужно копировать новые файлы с npm модуля 
-		//-link(rel="stylesheet", href="bootstrap/css/bootstrap-reboot.min.css")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
 		
-		link(rel="stylesheet", href="dist/css/normalize.css")
+		link(rel="stylesheet", href="bootstrap/css/bootstrap-reboot.min.css")
+		
+		//-link(rel="stylesheet", href="dist/css/normalize.css")
 		
 		//-link(rel="stylesheet", href="bootstrap/css/bootstrap-grid.min.css")
-		//-link(rel="stylesheet", href="bootstrap/css/bootstrap.min.css")
-		
+		link(rel="stylesheet", href="bootstrap/css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/fontawesome-all.min.css")
 		link(rel="stylesheet" href='style.css?v=%28.05.2018%')
 		//-сброс кэша
 		link(rel="icon" type="image/png" href="favicon.png" sizes="128x128")
-		title название сайта
+		title часы
 	body
 		.footer__down
 			include blocks/header.pug
@@ -24,8 +25,8 @@ html(lang="ru")
 
 	
 		//- джиквери нужно копировать новые файлы с npm модуля, там еще есть какие то библиотеки, я не разбиралась еще
-		//--script(type="text/javascript" src="jquery/jquery.min.js")
-		//-script(type="text/javascript" src="bootstrap/js/bootstrap.min.js")
-		//-script(type="text/javascript" src="js/script.js?v=%28.05.2018%")
+		//-script(type="text/javascript" src="jquery/jquery.min.js")
+		script(type="text/javascript" src="bootstrap/js/bootstrap.min.js")
+		script(type="text/javascript" src="js/script.js")
 		//- сброс кэша
 		

@@ -1,12 +1,14 @@
-
-///-------nav active---оставляет цвет навигации активным, если ты на этой странице находишься--
-
-$('document').ready(function() {
-    $('.nav__item  a').each(function() {
-        if ('http://localhost:3000/'+$(this).attr('href') == window.location.href)
-        {
-            $(this).addClass('active');
-        }
-    });
-}); 
-  
+///---Гамбургер
+$(document).ready(function() {
+		$(document).delegate('.open', 'click', function(event){
+			$(this).addClass('oppenned');
+			event.stopPropagation();
+		})
+		$(document).delegate('body', 'click', function(event) {
+			$('.open').removeClass('oppenned');
+		})
+		$(document).delegate('.cls', 'click', function(event){
+			$('.open').removeClass('oppenned');
+			event.stopPropagation();
+		});
+	});
