@@ -32,8 +32,43 @@
 		box-shadow: 0 0 0 0 lighten($siren,30%)
 		top: 5px
 		left: 5px
+/////gumburger
 
+a.menu-link 
+	float: right;
+	display: block;
+	padding: 1em;
+	
 
+nav[role=navigation] 
+	clear: both;
+	transition: all 0.3s ease-out;
 
+.js nav[role=navigation] 
+	overflow: hidden;
+	max-height: 0;
 
+nav[role=navigation].active 
+	max-height: 15em;
 
+nav[role=navigation] ul 
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #fff;
+
+nav[role=navigation] li a 
+	display: block;
+	padding: 0.8em;
+	border-bottom: 1px solid #fff;
+#menu
+	a
+		@include font(18px,"OpenSansSemiBold", $siren) 
+		transition: color 0.3s ease-out;
+		text-decoration: none
+		&:hover
+			color: $white
+		&:active
+			color: lighten($siren,20%)
+	
+.toggle
+	color: $white
