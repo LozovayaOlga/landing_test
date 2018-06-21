@@ -2,7 +2,7 @@
 	
 .screen
 	background-color: $siren
-	padding: 90px 0 200px
+	padding: 90px 0
 
 .screen_button
 	background-color: $birusa
@@ -15,4 +15,23 @@
 
 .screen__description--2 h2
 	@include font(40px, "OpenSansLight", $white)
-	
+
+.screen-wrap
+	position: relative
+.screen__massage
+	background-image: url(img/photo_masage.jpg) 
+	background-position: 0 0
+	background-repeat: no-repeat
+	background-size: contain
+	height: 540px
+
+.screen_phone
+	background-image: url(img/phone.png) 
+	background-repeat: no-repeat
+	background-size: contain
+	height: 850px
+	position: absolute 
+	width: 420px
+	right: 0
+	top: -200px
+	z-index: 50
