@@ -1,4 +1,4 @@
-
+//раскрывает меню при нажатии
 $(document).ready
 (function() {
 	
@@ -14,7 +14,7 @@ $menulink.click
 	return false;
 });});
 
-
+//кнопка подробнее-скрыть
 $(document).ready
 (function() {
 	
@@ -30,3 +30,14 @@ $screen_button.click
 	$screen_button.toggleClass('none');
 	return false;
 });});
+
+//при нажатии красиво мотает к якорю
+
+$(document).ready(function() {
+    $(".scrollto").click(function () {
+        var elementClick = '#'+$(this).attr("href").split("#")[1]
+        var destination = $(elementClick).offset().top;
+        jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
+        return false;
+    });
+});

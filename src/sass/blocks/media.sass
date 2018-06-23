@@ -1,4 +1,4 @@
-///*==========  Desktop First Method  ==========*/
+///*==========  Desktop First Method  ДО ТОЧКИ==========*/
 //
 ///* Large Devices, Wide Screens */
 //@media only screen and (max-width : 1200px)
@@ -13,11 +13,12 @@
 @media only screen and (max-width: 768px) 
 		.header
 			background-position: 20% 0
-		.header__title
-			font-size: 50px
 		.screen_phone
-			right: -50%
-			
+			display: none
+		.screen__massage
+			display: none
+		.about__tagline	
+			min-height: 0
 	
 //
 //
@@ -26,10 +27,7 @@
 @media only screen and (max-width: 480px) 
 		.header__logo
 			visibility: hidden
-		.screen_phone
-			display: none
-		.screen__massage
-			display: none
+
 
 
 
@@ -44,7 +42,7 @@
 
 //
 //
-///*==========  Mobile First Method  ==========*/
+///*==========  Mobile First Method ОТ и ДАЛЬШЕ ==========*/
 //
 ///* Custom, iPhone Retina */
 //@media only screen and (min-width : 320px) 
@@ -52,7 +50,9 @@
 //
 //
 ///* Extra Small Devices, Phones */
-//@media only screen and (min-width : 480px) 
+@media only screen and (min-width : 480px) 
+		.header__title
+			font-size: 50px
 
 //
 ///* Small Devices, Tablets */
@@ -73,12 +73,14 @@
 
 		nav[role=navigation] li a 
 			border: 0;
+		.screen_phone
+			right: -50%
 
 //
 ///* Medium Devices, Desktops */
-//@media only screen and (min-width : 992px) 
-//
-//
+@media only screen and (min-width : 992px) 
+		.screen_phone
+			right: 0
 //
 // /* Large Devices, Wide Screens */
 //@media only screen and (min-width : 1200px) 
